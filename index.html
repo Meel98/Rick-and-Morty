@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick&Morty</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>Rick & Morty Nexus</h1>
+    <p class="subtitle">Explora los personajes del multiverso</p>
+  </header>
+
+  <!-- Filtros interactivos -->
+  <div class="controls">
+    <input type="text" id="searchInput" class="input-search" placeholder="Buscar personaje por nombre...">
+    <select id="statusFilter" class="select-filter">
+      <option value="">Todos los Estados</option>
+      <option value="alive">Vivo (Alive)</option>
+      <option value="dead">Muerto (Dead)</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+  </div>
+
+  <!-- Contenedor donde se cargan las tarjetas -->
+  <main id="cardsContainer" class="cards-grid">
+    <!-- Se llena dinámicamente con JavaScript -->
+  </main>
+
+    <script src="./src/function.js"></script>
+</body>
+</html>
